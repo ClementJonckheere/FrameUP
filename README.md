@@ -23,6 +23,6 @@ Démarrage Rapide
 
 Pour commencer à utiliser FrameUp, suivez ces étapes simples :
 
-    Clonez le dépôt : git clone url_du_dépôt
+    Clonez le dépôt : git clone https://github.com/ClementJonckheere/FrameUP.git
     Construisez l'image Docker : docker build -t FrameUp .
     Lancez l'application : docker run -d -p 80:80 FrameUp
