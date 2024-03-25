@@ -1,6 +1,6 @@
 # FrameUp
 
-FrameUp est une plateforme de communication et de collaboration conçue pour faciliter le travail d'équipe et la gestion de projets. En combinant des outils de messagerie en temps réel avec des fonctionnalités avancées de tableau Kanban, Nom de l'Application offre une solution intégrée pour gérer les tâches, les projets, et les communications au sein d'équipes de toutes tailles.
+FrameUp est une plateforme de communication et de collaboration conçue pour faciliter le travail d'équipe et la gestion de projets. En combinant des outils de messagerie en temps réel avec des fonctionnalités avancées de tableau Kanban, FrameUp offre une solution intégrée pour gérer les tâches, les projets, et les communications au sein d'équipes de toutes tailles.
 Caractéristiques Principales
 
     Messagerie Instantanée : Communiquez en temps réel avec vos collègues, formez des groupes pour des discussions ciblées, et partagez des fichiers et des médias facilement.
@@ -12,7 +12,7 @@ Caractéristiques Principales
 
 Technologie
 
-Nom de l'Application est construit avec une pile technologique moderne pour garantir une expérience utilisateur fluide et une performance élevée :
+FrameUp est construit avec une pile technologique moderne pour garantir une expérience utilisateur fluide et une performance élevée :
 
     Frontend : Next.js 
     Backend : Rust
