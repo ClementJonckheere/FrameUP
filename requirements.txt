@@ -1,0 +1,5 @@
+## source env/bin/activate
+
+## docker_compose -up -d
+
+## uvicorn app.main:app --reload
