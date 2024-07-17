@@ -81,3 +81,7 @@ def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(
         raise credentials_exception
     return user
 
+def get_currnt_active_user(current_user: schemas.User = Depends(get_current_user)):
+    if current_user.is_active:
+        return current_user
+    raise HTTPException(status_code=400, detail="Inactive user")

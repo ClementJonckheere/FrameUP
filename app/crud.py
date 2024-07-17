@@ -19,9 +19,6 @@ def create_user(db: Session, user: schemas.UserCreate):
     db.refresh(db_user)
     return db_user
 
-
-
-
 ## groups
 def get_groups(db: Session, skip: int = 0, limit: int = 10):
     return db.query(models.Group).offset(skip).limit(limit).all()
@@ -54,6 +51,23 @@ def create_task(db: Session, task: schemas.TaskCreate, group_id: int):
     db.commit()
     db.refresh(db_task)
     return db_task
+
+## files
+
+def get_files(db: Session, skip: int = 0, limit: int = 10):
+    return db.query(models.File).offset(skip).limit(limit).all()
+
+def create_file(db:Session, file: schemas.FileCreate, group_id:int):
+    db_file = models.File(**file.dict(), group_id=group_id)
+    db.add(db_file)
+    db.commit()
+    db.refresh(db_file)
+    return db_file
+
+def get_files_by_group(db: Session, group_id: int):
+    return db.query(models.File).filter(models.File.group_id == group_id).all()
+
+
 
 
 
